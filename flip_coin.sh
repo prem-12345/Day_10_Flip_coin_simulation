@@ -6,9 +6,23 @@
 
 flip=$((RANDOM%2))
 
-if [[ $flip -eq 0 ]]
+if [ $flip -eq 0 ]
 then
 	echo "Head Wins"
 else
 	echo "Tail Wins"
 fi
+
+#UC_2:SHOW NUMBER OF TIMES HEADS OR TAILS WIN
+
+
+for ((i=0;i<=$n;i++))
+do
+	flip=$((RANDOM%2))
+if [ $flip -eq 0 ]
+then
+	echo "Head wins"
+else
+	echo "Tail wins"
+fi
+	
